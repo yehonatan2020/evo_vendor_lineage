@@ -237,6 +237,8 @@ endif
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Launcher3QuickStep \
+    Settings \
     CarSystemUI \
     SystemUI
 
