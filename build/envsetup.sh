@@ -967,3 +967,6 @@ export USE_THINLTO_CACHE=true
 
 export SKIP_ABI_CHECKS=true
 export BUILD_BROKEN_DISABLE_BAZEL=true
+
+echo "Adding Google Mobile Services"
+export WITH_GMS=true
