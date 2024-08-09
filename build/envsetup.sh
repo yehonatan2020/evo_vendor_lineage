@@ -970,3 +970,8 @@ export BUILD_BROKEN_DISABLE_BAZEL=true
 
 echo "Adding Google Mobile Services"
 export WITH_GMS=true
+
+#SCUDO
+export PRODUCT_USE_SCUDO=true
+
+export BUILD_BROKEN_DUP_RULES=true
