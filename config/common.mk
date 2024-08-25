@@ -5,13 +5,11 @@ $(call inherit-product, vendor/extras/evolution.mk)
 $(call inherit-product-if-exists, vendor/certification/config.mk)
 
 # Pixel additions
-ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/pixel-framework/config.mk)
 $(call inherit-product, vendor/pixel-style/config/common.mk)
 
 # Don't dexpreopt prebuilts. (For GMS).
 DONT_DEXPREOPT_PREBUILTS := true
-endif
 
 PRODUCT_BRAND ?= EvolutionX
 
@@ -131,13 +129,6 @@ PRODUCT_PACKAGES += \
 # Build Manifest
 PRODUCT_PACKAGES += \
     build-manifest
-
-# Lineage packages
-ifeq ($(PRODUCT_IS_ATV),)
-PRODUCT_PACKAGES += \
-    ExactCalculator \
-    Jelly
-endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
@@ -280,13 +271,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay
-
-# Translations
-CUSTOM_LOCALES += \
-    ast_ES \
-    gd_GB \
-    cy_GB \
-    fur_IT
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
