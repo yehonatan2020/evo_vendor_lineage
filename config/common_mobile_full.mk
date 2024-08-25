@@ -5,18 +5,11 @@ PRODUCT_SIZE := full
 
 # Apps
 PRODUCT_PACKAGES += \
-    Etar \
     Profiles \
-    Recorder
 
 ifeq ($(BUILD_SEEDVAULT),true)
 PRODUCT_PACKAGES += \
     Seedvault
-endif
-
-ifneq ($(PRODUCT_NO_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Aperture
 endif
 
 ifeq ($(WITH_GMS),false)
