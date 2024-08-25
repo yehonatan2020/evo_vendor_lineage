@@ -1,7 +1,5 @@
 # GMS
-ifeq ($(WITH_GMS),true)
 WITH_GMS_COMMS_SUITE := true
-endif
 
 # Sensitive Phone Numbers list
 PRODUCT_PACKAGES += \
@@ -13,17 +11,11 @@ PRODUCT_PACKAGES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
-    messaging \
     Stk
 
 # Default ringtone
-ifeq ($(WITH_GMS),true)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.ringtone=Your_new_adventure.ogg
-else
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Orion.ogg
-endif
 
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)
