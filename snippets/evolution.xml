@@ -116,7 +116,7 @@
   <project path="device/lineage/sepolicy" name="device_evolution_sepolicy" remote="evo" />
 
   <!-- System -->
-  <project path="system/core" name="system_core" groups="pdk" remote="evo" />
+  <project path="system/core" fetch="https://github.com" name="yehonatan2020/lineage_system_core" revision="vic" />
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
 
   <!-- Vendor -->
