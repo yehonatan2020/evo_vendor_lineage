@@ -1,20 +1,29 @@
-![Evolution X](https://github.com/Evolution-X/manifest/raw/vic/Banner.png)
+![Evolution X](https://github.com/Evolution-X/manifest/raw/udc/Banner.png)
 
-# Initialize local repository
-```
-repo init -u https://github.com/Evolution-X/manifest -b vic --git-lfs
-```
+### Initializing Local Repo ###
 
-# Sync up
-```
-repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+Create a directory for the source files
+```bash
+mkdir EvoX && cd EvoX
 ```
 
-# Build
+Install Repo in the created directory
+```bash
+repo init --depth=1 --no-repo-verify -u https://github.com/yehonatan2020/evox_manifest -b vic --git-lfs
+```
+
+This is what you will run each time you want to pull in upstream changes. Keep in mind that on your
+first run, it is expected to take a while as it will download all the required Android source files
+and their change histories.
+
+- Let Repo take care of the hard work
+```bash
+repo --no-pager --color=always sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune
+```
 
 - Set up the build environment
 ```bash
-. build/envsetup.sh
+source build/envsetup.sh
 ```
 
 - Lunch a target
@@ -22,7 +31,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 lunch lineage_codename-ap3a-userdebug
 ```
 
-- To start compiling
+- To start compiling (fastboot flashable image)
 ```bash
-m evolution
+m updatepackage
 ```
