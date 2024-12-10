@@ -56,7 +56,7 @@
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="evo" />
 
   <!-- Build -->
-  <project path="build/make" name="build" groups="pdk,sysui-studio" remote="evo" >
+  <project path="build/make" fetch="https://github.com" name="yehonatan2020/evo_build_make" revision="vic" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
