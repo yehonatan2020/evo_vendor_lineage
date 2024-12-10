@@ -123,7 +123,6 @@
   <project path="vendor/certification" name="vendor_certification" remote="evo" />
   <project path="vendor/extras" name="vendor_extras" remote="evo" />
   <project path="vendor/gms" name="vendor_gms_vic" remote="evo-bitbucket" clone-depth="1" />
-  <project path="vendor/lineage" name="vendor_evolution" remote="evo" />
-  <!--project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="evo" />-->
+  <project path="vendor/lineage" fetch="https://github.com" name="yehonatan2020/evo_vendor_lineage" revision="vic" />
   <project path="vendor/pixel-style" name="vendor_pixel-style" remote="evo" />
 </manifest>
