@@ -120,9 +120,9 @@
   <project path="system/libhwbinder" name="system_libhwbinder" remote="evo" />
 
   <!-- Vendor -->
-  <project path="vendor/certification" name="vendor_certification" remote="evo" />
+  <project path="vendor/certification" fetch="https://github.com" name="yehonatan2020/evo_vendor_certification" revision="vic" />
   <project path="vendor/extras" name="vendor_extras" remote="evo" />
   <project path="vendor/gms" name="vendor_gms_vic" remote="evo-bitbucket" clone-depth="1" />
   <project path="vendor/lineage" fetch="https://github.com" name="yehonatan2020/evo_vendor_lineage" revision="vic" />
-  <project path="vendor/pixel-style" name="vendor_pixel-style" remote="evo" />
+  <project path="vendor/pixel-style" fetch="https://github.com" name="yehonatan2020/evo_vendor_pixel-style" revision="vic" />
 </manifest>
