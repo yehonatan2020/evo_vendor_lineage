@@ -50,7 +50,7 @@
   <project path="art" name="art" groups="pdk" remote="evo" />
 
   <!-- Bionic -->
-  <project path="bionic" name="bionic" groups="pdk" remote="evo" />
+  <project path="bionic" name="yehonatan2020/evo_bionic" fetch="https://github.com" revision="vic" />
 
   <!-- Bootable -->
   <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="evo" />
