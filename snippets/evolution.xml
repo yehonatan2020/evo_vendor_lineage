@@ -82,7 +82,7 @@
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="evo" />
 
   <!-- Infrastructure -->
-  <project path="evolution/manifest" name="manifest" remote="evo" />
+  <project path="evolution/manifest" name="yehonatan2020/evox_manifest" revision="vic" fetch="https://github.com" />
   <project path="evolution/OTA" name="OTA" remote="evo" />
   <project path="evolution/OTA-VANILLA" name="OTA" revision="vic-vanilla" remote="evo" />
   <project path="evolution/www" name="www" revision="main" remote="evo" />
